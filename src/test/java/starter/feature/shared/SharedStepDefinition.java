@@ -9,7 +9,7 @@ import starter.navigation.OpenBrowser;
 public class SharedStepDefinition {
 
     @Given("que {actor} comprador frecuente de camisas online")
-    public void FrequentBuyer(@NotNull Actor actor) {
+    public void frequentBuyer(@NotNull Actor actor) {
         actor.attemptsTo(Open.browserOn().the(OpenBrowser.class));
     }
 }
