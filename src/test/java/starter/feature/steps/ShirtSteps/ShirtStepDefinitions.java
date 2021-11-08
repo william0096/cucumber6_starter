@@ -19,6 +19,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 public class ShirtStepDefinitions {
+    private final String VALOR = "72.50";
 
     @Steps
     BaseStep baseStep;
@@ -67,6 +68,6 @@ public class ShirtStepDefinitions {
     public void totalPayment(Actor actor) {
         assertThat("Validación del total a pagar",
                 BaseStep.value,
-                is("72.50"));
+                is(VALOR));
     }
 }
