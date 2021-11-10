@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">15.844s</div>
+<div class="counter">19.090s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,50 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Searching a T-Shirt"></a>
-<h3 class="failures">Searching a T-Shirt</h3>
-<span class="code">
-<pre>org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=95.0.4638.69)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATHADL27888.local', ip: 'fe80:0:0:0:1c7a:a3c9:a97:acdc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_232'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/jj/1kvx_5_x5y7...}, goog:chromeOptions: {debuggerAddress: localhost:64583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c542e3efe0fa6da29a4867ebbd862687
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
-	at starter.stepdefinitions.SearchStepDefinitions.heShouldShopTShirtsLSize(SearchStepDefinitions.java:48)
-	at ✽.he should shop T-shirts L size(file:///Users/jorge.castillo/Downloads/cucumber6_starter-JECV/src/test/resources/features/search/search_by_size.feature:6)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -115,19 +81,19 @@ Session ID: c542e3efe0fa6da29a4867ebbd862687
 </tr>
 </thead>
 <tr>
-<td class="failures">Searching a T-Shirt</td>
-<td class="failures">15.844s</td>
-<td class="failures">failed</td>
+<td class="success">Searching a T-Shirt</td>
+<td class="success">19.090s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>
 Scenario: Searching a T-Shirt                        ?[90m# src/test/resources/features/search/search_by_size.feature:3?[0m
-07:37:00.569 [Test worker] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///Users/jorge.castillo/Downloads/cucumber6_starter-JECV/src/test/resources/features/search/search_by_size.feature
-07:37:00.653 [Test worker] INFO   - 
+07:18:23.063 [Test worker] INFO  i.c.core.plugin.SerenityReporter - Running feature from file:///Users/jorge.castillo/Downloads/Prueba_llave/cucumber6_starter/src/test/resources/features/search/search_by_size.feature
+07:18:23.160 [Test worker] INFO   - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
@@ -135,67 +101,44 @@ Scenario: Searching a T-Shirt                        ?[90m# src/test/resources/f
 
 Searching a T-Shirt(shopping-by-size;searching-a-t-shirt)
 --------------------------------------------------------------------------------
-07:37:00.654 [Test worker] INFO  n.thucydides.core.model.TestOutcome - SetUserStory Shopping by size
-07:37:00.667 [Test worker] INFO  n.thucydides.core.model.TestOutcome - SetUserStory Shopping by size
-07:37:01.256 [Test worker] INFO  n.s.c.w.d.ChromeDriverProvider - Using automatically driver download
-07:37:01.441 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 95.0.4638.69 (resolved driver for Chrome 95)
-07:37:01.447 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/jorge.castillo/.cache/selenium/chromedriver/mac64/95.0.4638.69/chromedriver
-07:37:01.870 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
-07:37:01.870 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, autodownload: true, browserName: chrome, driver: chrome, goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors, \n                   --disa..., --disable-default-apps, --disable-extensions-file-a..., \n                   --inco..., --disable-infobars,--disabl...], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+07:18:23.160 [Test worker] INFO  n.thucydides.core.model.TestOutcome - SetUserStory Shopping by size
+07:18:23.167 [Test worker] INFO  n.thucydides.core.model.TestOutcome - SetUserStory Shopping by size
+07:18:23.701 [Test worker] INFO  n.s.c.w.d.ChromeDriverProvider - Using automatically driver download
+07:18:24.497 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 95.0.4638.69 (resolved driver for Chrome 95)
+07:18:24.508 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/jorge.castillo/.cache/selenium/chromedriver/mac64/95.0.4638.69/chromedriver
+07:18:24.871 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+07:18:24.871 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, autodownload: true, browserName: chrome, driver: chrome, goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors, \n                   --disa..., --disable-default-apps, --disable-extensions-file-a..., \n                   --inco..., --disable-infobars,--disabl...], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
   ?[32mGiven ?[0m?[32m?[0m?[32m?[1mJorge?[0m?[32m is shopping T-shirts on the React Shop?[0m ?[90m# starter.stepdefinitions.SearchStepDefinitions.ShoppingTShirtsOnTheReactShop(net.serenitybdd.screenplay.Actor)?[0m
   ?[32mWhen ?[0m?[32m?[0m?[32m?[1mhe?[0m?[32m looks up L size?[0m                            ?[90m# starter.stepdefinitions.SearchStepDefinitions.heLooksUpLSize(net.serenitybdd.screenplay.Actor)?[0m
-07:37:15.148 [Test worker] WARN  n.t.core.webdriver.WebDriverFacade - Failed to take screenshot (unexpected alert open: {Alert text : Checkout - Subtotal: $ 72.50}
+07:18:40.368 [Test worker] WARN  n.t.core.webdriver.WebDriverFacade - Failed to take screenshot (unexpected alert open: {Alert text : Checkout - Subtotal: $ 72.50}
   (Session info: chrome=95.0.4638.69): Checkout - Subtotal: $ 72.50
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ATHADL27888.local', ip: 'fe80:0:0:0:1c7a:a3c9:a97:acdc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_232'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/jj/1kvx_5_x5y7...}, goog:chromeOptions: {debuggerAddress: localhost:64583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c542e3efe0fa6da29a4867ebbd862687)
-  ?[31mThen ?[0m?[31m?[0m?[31m?[1mhe?[0m?[31m should shop T-shirts L size?[0m                ?[90m# starter.stepdefinitions.SearchStepDefinitions.heShouldShopTShirtsLSize(net.serenitybdd.screenplay.Actor)?[0m
-      ?[31morg.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=95.0.4638.69)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATHADL27888.local', ip: 'fe80:0:0:0:1c7a:a3c9:a97:acdc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_232'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/jj/1kvx_5_x5y7...}, goog:chromeOptions: {debuggerAddress: localhost:64583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c542e3efe0fa6da29a4867ebbd862687
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
-	at starter.stepdefinitions.SearchStepDefinitions.heShouldShopTShirtsLSize(SearchStepDefinitions.java:48)
-	at ���.he should shop T-shirts L size(file:///Users/jorge.castillo/Downloads/cucumber6_starter-JECV/src/test/resources/features/search/search_by_size.feature:6)
-?[0m
-07:37:16.045 [Test worker] ERROR  - 
-  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
- |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
-   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
-   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/jj/1kvx_5_x5y7...}, goog:chromeOptions: {debuggerAddress: localhost:64790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 967f57463d0e8aabb99cf6199e4e32a4)
+MESSAGE
+React Shopping Cart
+  ?[32mThen ?[0m?[32m?[0m?[32m?[1mhe?[0m?[32m should shop T-shirts L size?[0m                ?[90m# starter.stepdefinitions.SearchStepDefinitions.heShouldShopTShirtsLSize(net.serenitybdd.screenplay.Actor)?[0m
+07:18:41.253 [Test worker] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 Searching a T-Shirt
----------------------------------------------------------------
-07:37:16.098 [Test worker] ERROR  -     Test failed at step: Then he should shop T-shirts L size
-07:37:16.098 [Test worker] ERROR  -     invalid argument
+----------------------------------------------------------------------
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 48889
+<pre>Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 49084
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1636375021.978][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-nov 08, 2021 7:37:03 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+nov 10, 2021 7:18:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACI?N: Detected dialect: W3C
 </pre>
 </span>
@@ -208,7 +151,7 @@ INFORMACI?N: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6</a> at 08-nov-2021 7:37:18</p>
+<a href="http://www.gradle.org">Gradle 5.6</a> at 10-nov-2021 7:18:44</p>
 </div>
 </div>
 </body>
